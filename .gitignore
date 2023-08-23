@@ -57,3 +57,8 @@ $RECYCLE.BIN/
 
 # VS Code directories
 .vscode/
+
+# Env files
+.env    
+.env.test
+.env.local
