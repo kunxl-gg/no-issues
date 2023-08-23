@@ -8,8 +8,10 @@ import (
 )
 
 var (
-	OPENAI_API_KEY string
-	GH_API_KEy string
+	OPENAI_API_KEY  string
+	GH_API_KEY		string
+	GITHUB_API_BASE_URL = "https://api.github.com"
+	OPENAI_BASE_URL = "https://api.openai.com"
 )
 
 // Initializing .env variables
@@ -21,6 +23,6 @@ func InitialiseEnvironmentVariables() {
 
 	// read the variables
 	OPENAI_API_KEY = os.Getenv("OPENAI_API_KEY")
-	GH_API_KEy = os.Getenv("GH_API_KEY")
+	GH_API_KEY = os.Getenv("GH_API_KEY")
 
 }
